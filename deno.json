@@ -3,8 +3,10 @@
         "start": "deno run --allow-read --allow-env --allow-run --unstable ./main.ts",
         "test": "deno test --unstable -A",
         "install":"deno install --allow-read --allow-env --allow-run --unstable -f -n loadEnv ./main.ts",
-        "release":"",
+        "release":"deno task minor && git push --follow-tags",
         "install-version":"deno install -n version -r -A https://deno.land/x/version/index.ts",
+        "minor":"version minor && deno task tag",
+        "tag":"git commit -am \"version\" && git tag -a v$(version get) -m \"$(version get)\" "
 
     }
 }
