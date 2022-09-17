@@ -6,7 +6,8 @@
         "release":"deno task minor && git push --follow-tags",
         "install-version":"deno install -n version -r -A https://deno.land/x/version/index.ts",
         "minor":"version minor && deno task tag",
-        "tag":"git tag -a v$(version get) -m \"$(version get)\" "
+        "path":"version path && deno task tag",
+        "tag":"git tag -a $(version get) -m \"$(version get)\" "
 
     }
 }
