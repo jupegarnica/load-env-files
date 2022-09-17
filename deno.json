@@ -1,0 +1,7 @@
+{
+    "tasks": {
+        "start": "deno run --allow-read --allow-env --allow-run --unstable ./main.ts",
+        "test": "deno test --unstable -A",
+        "install":"deno install --allow-read --allow-env --allow-run --unstable -f -n loadEnv ./main.ts"
+    }
+}
