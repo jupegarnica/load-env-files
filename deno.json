@@ -2,6 +2,9 @@
     "tasks": {
         "start": "deno run --allow-read --allow-env --allow-run --unstable ./main.ts",
         "test": "deno test --unstable -A",
-        "install":"deno install --allow-read --allow-env --allow-run --unstable -f -n loadEnv ./main.ts"
+        "install":"deno install --allow-read --allow-env --allow-run --unstable -f -n loadEnv ./main.ts",
+        "release":"",
+        "install-version":"deno install -n version -r -A https://deno.land/x/version/index.ts",
+
     }
 }

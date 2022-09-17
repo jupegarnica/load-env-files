@@ -23,5 +23,5 @@ $ loadEnv env
 
 Install from deno.land/x and use it as loadEnv
 ```sh
-deno install --allow-read --allow-env --allow-run --unstable -f -n loadEnv https://deno.land/x/loadenv/main.ts
+deno install --allow-read --allow-env --allow-run --unstable -f -n loadEnv https://deno.land/x/load_env_files/main.ts
 ```
