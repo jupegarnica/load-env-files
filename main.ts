@@ -1,9 +1,10 @@
-import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
-
+// import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
+import { config } from "https://deno.land/std@0.156.0/dotenv/mod.ts?s=config";
 // const args = Deno.args
 
-export function loadEnv() {
-  const env = config();
+export async function loadEnv() {
+  const env = await config();
+
   // for (const key in env) {
   //   Deno.env.set(key, env[key]);
   //   // console.log(key, env[key]);
@@ -30,4 +31,4 @@ export function loadEnv() {
 
 }
 
-loadEnv();
+await loadEnv();
